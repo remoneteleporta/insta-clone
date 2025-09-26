@@ -28,3 +28,14 @@ const posts = [
     }
 ]
 
+let nameEl = document.getElementById("id-name")
+let unamecommentEl=document.getElementById("username-comment")
+let locationEl=document.getElementById("location")
+let avartarEl=document.getElementById("user-pic")
+let postEl=document.getElementById("img-post")
+let likesEl=document.getElementById("likes-count")
+
+
+function display() {
+    nameEl.textContent += `${posts[0].name}`
+}

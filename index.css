@@ -1,4 +1,30 @@
 html, body {
-    margin: 0;
+    margin: auto;
     padding: 0;
+    width: 300px;
+}
+
+/* Top Navigation */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    border: 2px solid #C6C6C6;
+}
+
+.logo{
+    width: 127px;
+    height: 55px;
+}
+
+.profile-pic{
+    width: 34px;
+    height: 34px;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+.id-name{
+    color: black;
 }

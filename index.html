@@ -1,9 +1,36 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+        <title>Oldagram - Scrimba Project</title>
     </head>
     <body>
-        <img src="images/logo.png">
+        <nav>
+         <a href="index.html"><img onload="display()" class="logo" alt="oldagram logo" src="images/logo.png"></a>
+         <img class="profile-pic" src="/images/user-avatar.png">
+        </nav>
+        <main>
+        <article class="olda-post">
+            <header class="user-info">
+                <img id="user-pic">
+                <div class="name-location">
+                 <h2 id="id-name"></h2>
+                 <p id="location"></p>
+                </div>
+            </header>
+            <figure>
+                <img id="img-post">
+            </figure>
+            <div class="interactive-icons">
+            <button class="like-btn"></button>
+            <button class="comment-btn"></button>
+            <button class="share-btn"></button>
+            </div>
+            <footer>
+            <p id="likes-count"></p>
+            <p id="username-caption"></p>
+            </footer>
+        </article>    
         <script src="index.js"></script>
     </body>
 </html>
