@@ -29,13 +29,18 @@ const posts = [
 ]
 
 let nameEl = document.getElementById("id-name")
-let unamecommentEl=document.getElementById("username-comment")
+let unamecommentEl=document.getElementById("username-caption")
 let locationEl=document.getElementById("location")
-let avartarEl=document.getElementById("user-pic")
+let avartarEl=document.getElementById("user-avatar")
 let postEl=document.getElementById("img-post")
 let likesEl=document.getElementById("likes-count")
 
 
-function display() {
+function display(){
     nameEl.textContent += `${posts[0].name}`
+    unamecommentEl.textContent += `${posts[0].username} ${posts[0].comment}`
+    avartarEl.innerHTML = `<img id="user-avatar" src="${posts[0].avatar}">`
+    postEl.innerHTML = `<img id="img-post" src="${posts[0].post}">`
+    locationEl.textContent += `${posts[0].location}`
+    likesEl.textContent += `${posts[0].likes} likes`
 }
