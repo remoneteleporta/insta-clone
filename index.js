@@ -37,7 +37,7 @@ let postEl=document.getElementById("img-post")
 let likesEl=document.getElementById("likes-count")
 
 
-function display(){
+window.addEventListener('load', function display(){
     nameEl.textContent += `${posts[0].name}`
     unameEl.textContent += `${posts[0].username}`
     captionEl.textContent += `${posts[0].comment}`
@@ -45,4 +45,4 @@ function display(){
     postEl.innerHTML = `<img id="img-post" src="${posts[0].post}">`
     locationEl.textContent += `${posts[0].location}`
     likesEl.textContent += `${posts[0].likes} likes`
-}
+})

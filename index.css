@@ -91,6 +91,10 @@ cursor: pointer;
     max-width: 100%;
 }
 
+#like-btn:hover, #cmt-btn:hover, #share-btn:hover{
+    background-color: red;
+}
+
 #likes-count{
     margin: 10px 0 0 10px;
     font-weight: bold;
