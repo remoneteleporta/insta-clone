@@ -8,7 +8,7 @@ html, body {
 
 .olda-post{
      background: white;
-     padding-bottom: 15px;
+     padding: 0 0 5px 0;
 }
 
 /* Top Navigation */
@@ -67,7 +67,7 @@ margin: 0;
 }
 
 /* Content */
-#img-post{
+#feed-post{
     max-width: 100%;
     margin: 0;
 }
@@ -95,17 +95,28 @@ cursor: pointer;
     background-color: red;
 }
 
+/* Count Caption */
+
 #likes-count{
     margin: 10px 0 0 10px;
     font-weight: bold;
 }
 
 #username-caption{
-    display: flex;
-    gap: 5px;
-    margin: 10px 0 0 10px;
+    display: inline-block;
+    margin: 10px 0 10px 10px;
+    text-align: left;
 }
 
 #username{
     font-weight: bold;
+    padding-right: 5px;
+}
+
+
+
+/* Separator */
+
+#separator{
+    border-bottom: 18px solid #C6C6C6;
 }
